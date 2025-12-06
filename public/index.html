@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level Editor</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Level Editor</h1>
+        <p>Level Editor</p>
+    </header>
+
+    <main>
+        <section id="left-panel">
+            <div class="panel">
+                <h2>Level Info</h2>
+                <label>
+                    Level ID:
+                    <input type="text" id="level-id" placeholder="level1" />
+                </label>
+
+                <div class="button-row">
+                    <button id="save-level">Save</button>
+                    <button id="load-level">Load</button>
+                    <button id="delete-level">Delete</button>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Add Elements</h2>
+                <div class="button-row">
+                    <button id="add-catapult">Add Catapult</button>
+                    <button id="add-enemy">Add Enemy</button>
+                    <button id="add-ground">Add Ground</button>
+                    <button id="add-wood">Add Wood</button>
+                    <button id="add-stone">Add Stone</button>
+                    <button id="add-tnt">Add TNT</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="editor-panel">
+            <h2>Level Canvas</h2>
+            <div id="editor"></div>
+            <p class="hint">Right-click to delete. Drag with mouse.</p>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
